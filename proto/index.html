@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="/CSS/homepage.css" />
+    <script
+      src="https://kit.fontawesome.com/9110d07ed9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      class="title_logo"
+      href="/logo/logo1.png"
+      type="x-icon/image"
+    />
+  </head>
+
+  <body onload="">
+    <nav class="navbar">
+      <div class="img_container">
+        <img src="/images/logo1.png" alt="not_set" />
+      </div>
+      <div class="searchbar">
+        <!-- <input type="text" placeholder="Search.." id="t_search"> -->
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- <input type="button" name="search_button" id="search1" placeholder="search"> -->
+      </div>
+      <ul class="items">
+        <li class="item"><a href="/login.html">Login/Signup</a></li>
+        <li class="item"><a href="becomeA_Seller.html">Become a Seller</a></li>
+        <li class="item"><a href="">More</a></li>
+        <li class="item">
+          <a href="add_to_cart.html"
+            ><i class="fa-solid fa-cart-arrow-down"></i>Cart</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header class="categories">
+      <div class="cat_items">
+        <a href="cat_txt.html">
+          <h3>Text files :</h3>
+          <p>.pdf, .docx, .xlsx, .ppt</p>
+        </a>
+      </div>
+      <div class="cat_items">
+        <a href="cat_img.html">
+          <h3>Image files :</h3>
+          <p>.png, .jpeg, .jpg, .heic</p>
+        </a>
+      </div>
+      <div class="cat_items">
+        <a href="cat_audio.html">
+          <h3>Audio Files :</h3>
+          <p>.mp3,.mp4,.3ga,.aac</p>
+        </a>
+      </div>
+      <div class="cat_items">
+        <a href="cat_vid.html">
+          <h3>Video Files :</h3>
+          <p>.mkv,.mp4,.wmv,.mpeg</p>
+        </a>
+      </div>
+    </header>
+
+    <section class="contents grid_container" id="sect_cont">
+      <!--  <div class="items">
+            <div class="product_header">
+                <div class="img_container">
+                    <img src="/images/logo1.png" id="product_img" alt="Image not found">
+                </div>
+                <div class="product_name">
+                    <h3 id="product_title">Image 1 lore
+                </div>
+                </h3>
+            </div>
+            <div id="product_description">
+                <p>It is the description of the Image Lorem, ipsum Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Eos, ut tempora suscipit dolores ducimus animi dolor, necessitatibus impedit voluptate
+                    deserunt vel dicta dolorem id? Neque atque rem facere explicabo perspiciatis repellat nihil quos ea
+                    aliquam!
+            </div>
+            <div class="item_price">
+                <label for="price" id = "price">1,500</label>
+                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
+                <label for="profit" id="profit">76% off</label>
+            </div>
+            <div id="btns">
+                <button type="button" id="to_buy">BUY</button>
+                <button type="button" id="to_cart"><a href="add_to_cart.html"> ADD TO CART</a></button>
+            </div>
+        </div> -->
+
+      <!-- <div class="items" id="item_block">
+            <a href="product.html">
+                <div class="product_header">
+                    <div class="img_container">
+                        <img src="/images/2.jpg" id="product_img" alt="Image not found">
+                    </div>
+                    <div class="product_name">
+                        <h3 id="product_title">Image 1
+                    </div>
+                    </h3>
+                </div>
+            </a>
+            <div id="product_description">
+                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
+                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
+                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
+                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
+                    dolorum vero non possimus!</p>
+            </div>
+            <div class="item_price">
+                <label for="price" id="price">1,500</label>
+                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
+                <label for="profit" id="profit">76% off</label>
+            </div>
+            <div id="btns">
+                <button id="to_buy">BUY</button>
+                <button id="to_cart">ADD TO CART</button>
+            </div>
+        </div> -->
+      <!-- <div class="items" id="item_block">
+            <a href="product.html">
+                <div class="product_header">
+                    <div class="img_container">
+                        <img src="/images/logo1.png" id="product_img" alt="Image not found">
+                    </div>
+                    <div class="product_name">
+                        <h3 id="product_title">Image 1
+                    </div>
+                    </h3>
+                </div>
+            </a>
+            <div id="product_description">
+                <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex
+                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda
+                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor
+                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor
+                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem
+                    dolorum vero non possimus!</p>
+            </div>
+            <div class="item_price">
+                <label for="price" id=price>1,500</label>
+                <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>
+                <label for="profit" id="profit">76% off</label>
+            </div>
+            <div id="btns">
+                <button id="to_buy">BUY</button>
+                <button id="to_cart">ADD TO CART</button>
+            </div>
+        </div> -->
+    </section>
+
+    <footer class="footer_main">
+      <div class="sub_footer">
+        <div class="dif_block">
+          <ul>
+            <li>|About|</li>
+            <br />
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Corporate Information</li>
+          </ul>
+        </div>
+        <div class="dif_block">
+          <ul>
+            <li>|Help|</li>
+            <br />
+            <li>Payments</li>
+            <li>Review & Returns</li>
+            <li>FAQ</li>
+            <li>Report Infringnment</li>
+          </ul>
+        </div>
+        <div class="dif_block">
+          <ul>
+            <li>|Social|</li>
+            <br />
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+            <!-- <li>LinkedIn</li> -->
+          </ul>
+        </div>
+        <div class="dif_block">
+          <ul>
+            <li>|Mail|</li>
+            <br />
+            <li>+91 8765xxxxxx</li>
+            <li>softsellers@abc.ac.in</li>
+            <li>Toll free No. : 1800-XXXX-XXXX</li>
+            <!-- <li>Corporate Information</li> -->
+          </ul>
+        </div>
+      </div>
+      <a href="add_to_cart.html"></a>
+      <div class="last_footer">
+        <p>Softsellers.com &copy; All rights reserved</p>
+        <p>***************************************</p>
+        <p>Terms and Conditions | Privacy Policy</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const abc = document.getElementById('sect_cont');
+    window.addEventListener('load', add_more_field);
+
+    function add_more_field() {
+      console.log('add');
+      for (var i = 1; i <= 20; i++) {
+        html =
+          '<div class="items" id="item_block">\
+                    <a href="product.html">\
+                    <div class="product_header">\
+                        <div class="img_container">\
+                        <img src="/images/2.jpg" id="product_img" alt="Image not found">\
+                        </div>\
+                    <div class="product_name">\
+                        <h3 id="product_title">Image 1\
+                    </div>\
+                    </h3>\
+                </div>\
+                    </a>\
+                    <div id="product_description">\
+                    <p>It is the description Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius ex\
+                    lorem32 error reiciendis fugit porro, commodi molestias pariatur unde dolores iure aliquam assumenda\
+                    magni dignissimos velit ducimus esse, tempore quas? of the Image Lorem, ipsum dolor\
+                    sit amet consectetur adipisicing elit. Eum voluptatum, dolor\
+                    autem atque ullam saepe dolores rem odit consequuntur minus cumque eaque, cum, dolore animi quidem\
+                    dolorum vero non possimus!</p>\
+                </div>\
+                <div class="item_price">\
+                    <label for="price" id = "price">1,500</label>\
+                    <label for="d_price" id="d_price"><span>&#x20B9</span>600</label>\
+                    <label for="profit" id="profit">76% off</label>\
+                </div>\
+                <div id="btns">\
+                    <button id="to_buy">BUY</button>\
+                    <button id="to_cart"><a href="add_to_cart.html">ADD TO CART</a></button>\
+                </div>\
+                </div>';
+
+        var form = document.getElementById('sect_cont');
+        form.innerHTML += html;
+      }
+    }
+  </script>
+</html>

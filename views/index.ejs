@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="/CSS/homepage.css">
+    <script src="https://kit.fontawesome.com/9110d07ed9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="icon" class="title_logo" href="/logo/logo1.png" type="x-icon/image">
+</head>
+
+<body onload="">
+    <nav class="navbar">
+        <div class="img_container">
+            <img src="/logo.png" alt="not_set">
+        </div>
+        <div class="searchbar">
+            <div id="wrapper1" class="wrapper">
+                <div class="search-input">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="text" onclick="addclass()" placeholder="Type to search.." id="t_search">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+            <button type="button" id="start-btn" class="mic"><i class="fa-sharp fa-solid fa-microphone"></i></button>
+        </div>
+        <ul class="items">
+            <li class="item"><a href="/api/v1/products">Home</a></li>
+            <li class="item"><a href="/api/v1/users/">Login/Signup</a></li>
+            <li class="item"><a href="becomeA_Seller.html">Become a Seller</a></li>
+            <li class="item"><a href="">More</a></li>
+            <li class="item"><a href="/api/v1/cart/"><i class="fa-solid fa-cart-arrow-down"></i>Cart</a></li>
+            <li class="item"><a href="/api/v1/users/logout">Log out</a></li>
+        </ul>
+    </nav>
+
+    <header class="categories">
+        <div class="cat_items">
+            <a href="?category=text">
+                <h3>Text files :</h3>
+                <p>.pdf, .docx, .xlsx, .ppt</p>
+            </a>
+        </div>
+        <div class="cat_items">
+            <a href="?category=image">
+                <h3>Image files :</h3>
+                <p>.png, .jpeg, .jpg, .heic</p>
+            </a>
+        </div>
+        <div class="cat_items">
+            <a href="?category=audio">
+                <h3>Audio Files : </h3>
+                <p>.mp3,.mp4,.3ga,.aac</p>
+            </a>
+        </div>
+        <div class="cat_items">
+            <a href="?category=video">
+                <h3>Video Files :</h3>
+                <p>.mkv,.mp4,.wmv,.mpeg</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="contents grid_container" id="sect_cont">
+
+        
+            <% if(productsData != '') {%>
+                <% productsData.forEach((row, index) => { %>
+                    <div class="items">
+                        <div class="product_header">
+                            <div class="img_container">
+                                <img src="/<%= row.imageCover %>" id="product_img" alt="Image not found">
+                            </div>
+                            <div class="product_name">
+                                <h3 id="product_title"><%= row.name %>
+                            </div>
+                            </h3>
+                        </div>
+                        <!-- <div id="product_description">
+                            <p> <%= row.description%>
+                            </p>
+                        </div> -->
+                        <div class="item_price">
+                            <label for="price" id = "price"></label>
+                            <label for="d_price" id="d_price"><span>&#x20B9</span><%= row.price%></label>
+                            <label for="profit" id="profit"></label>
+                        </div>
+                        <div id="btns">
+                            
+                            
+                            <button type="button" id="to_buy"><a href="./product.ejs">BUY</a></button>
+                            <button type="submit" id="to_cart"><a href="/api/v1/cart/<%= row.id%>">ADD TO CART</a></button>
+                            <form action="" method="post">
+                            </form>
+                            
+                        </div>
+                    
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h1>No product available</h1>>
+            <% } %>
+
+    </section>
+
+    <footer class="footer_main">
+        <div class="sub_footer">
+            <div class="dif_block">
+
+                <ul>
+                    <li>|About|</li><br>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </div>
+            <div class="dif_block">
+
+                <ul>
+                    <li>|Help|</li><br>
+                    <li>Payments</li>
+                    <li>Review & Returns</li>
+                    <li>FAQ</li>
+                    <li>Report Infringnment</li>
+                </ul>
+            </div>
+            <div class="dif_block">
+
+                <ul>
+                    <li>|Social|</li><br>
+                    <li>Facebook </li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                    <!-- <li>LinkedIn</li> -->
+                </ul>
+            </div>
+            <div class="dif_block">
+
+                <ul>
+                    <li>|Mail|</li><br>
+                    <li>+91 8765xxxxxx</li>
+                    <li>softsellers@abc.ac.in</li>
+                    <li>Toll free No. : 1800-XXXX-XXXX </li>
+                    <!-- <li>Corporate Information</li> -->
+                </ul>
+            </div>
+        </div>
+<a href="add_to_cart.html"></a>
+        <div class="last_footer">
+            <p>Softsellers.com &copy; All rights reserved</p>
+            <p>***************************************</p>
+            <p>Terms and Conditions | Privacy Policy</p>
+        </div>
+    </footer>
+</body>
+
+<script src="../public/js/homepage.js"></script>
+<script src="Autocomplete Search Suggestions/script.js"></script>
+<!-- <script src="Autocomplete Search Suggestions/suggestions.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- <script src="../public/js//script.js"></script> -->
+<!-- <script src="../public/js/button.js"></script> -->
+<!-- <script>
+    <!-- const button = document.getElementById('to_cart');
+    button.addEventListener('click', async => {
+    console.log('hello')
+      try {     
+        const response = await fetch('http://127.0.0.1:4000/api/v1/`add_to_cart', {
+          method: 'post',
+          body: {
+            "cart_id": "63eef198be1f2d6294a4d841"
+        }
+        });
+        console.log('Completed!', response);
+      } catch(err) {
+        console.error(`Error: ${err}`);
+      }
+    }); -->
+</script> -->
+
+<script src="Autocomplete Search Suggestions/script.js"></script>
+<script src="Autocomplete Search Suggestions/suggestions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="/JS/script.js"></script>
+<script>
+    // burger button function
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.items')
+    var count = 1;
+    burger.addEventListener('click', () => {
+        count += 1;
+        if (count % 2 == 0) {
+            navbar.style.display = 'flex';
+        }
+        else {
+            navbar.style.display = 'none';
+
+        }
+    })
+
+</script>
+
+</html>

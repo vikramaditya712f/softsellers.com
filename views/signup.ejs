@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/signup.css" />
+    <link
+      rel="icon"
+      class="title_logo"
+      href="/images/logo1.png"
+      type="x-icon/image"
+    />
+    <script src="/JS/signup.js"></script>
+  </head>
+  <body>
+    <section class="logincontainer">
+      <div class="login_form">
+        <img src="/logo.png" class="logo_img" alt="Not loaded" />
+        <form
+          action="/api/v1/users/register"
+          method="POST"
+          onsubmit="return validateForm()"
+          class="main_form"
+        >
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <p class="error" id="name"></p>
+          <label for="">Enter Name</label>
+
+          <input type="text" name="role" id="role" placeholder="Role" />
+          <p class="error" id="role"></p>
+          <label for="">Enter Role</label>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="@gmail.com"
+          />
+          <p class="error" id="e_mail_id"></p>
+          <label for="">Enter mail</label>
+
+          <input type="text" placeholder="Mobile" name="mobile" id="mobile" />
+          <p class="error" id="mobile"></p>
+          <label for=""> Enter Mobile Number:</label>
+
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            id="password"
+          />
+          <p class="error" id="password"></p>
+          <label for="">Password:</label>
+
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="passwordConfirm"
+            id="passwordConfirm"
+          />
+          <p class="error" id="passwordConfirm"></p>
+          <label for="">Confirm Password:</label>
+
+          <button type="submit" class="btn_signup">Signup</button>
+        </form>
+        <p class="jump_signup">
+          Already have an account?
+          <span><a href="/api/v1/users/">Login</a> </span>
+        </p>
+        <p class="footer">Softsellers.com &copy; All rights reserved</p>
+      </div>
+    </section>
+  </body>
+</html>

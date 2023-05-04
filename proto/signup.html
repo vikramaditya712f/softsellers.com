@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/signup.css">
+    <link rel="icon" class="title_logo" href="/images/logo1.png" type="x-icon/image">
+    <script src="/JS/signup.js"></script>
+</head>
+<body>
+    <section class="logincontainer">
+        
+        
+        <div class="login_form">
+            <img src="/images/logo1.png" class="logo_img" alt="Not loaded">
+            <form action="#" onsubmit="return validateForm()"  class="main_form">
+                <input type="text" name="" id="f_name" placeholder="Firstname">
+                <p class="error" id="first_name"></p>
+                <label for="">Enter First Name</label>
+
+                <input type="text" placeholder="Lastname" id="l_name">
+                <p class="error" id="last_name"></p>
+                <label for="">Enter Last Name</label>
+
+                <input type="email" name="mail_id" id="e_mail" placeholder="@gmail.com">
+                <p class="error" id="e_mail_id"></p>
+                <label for="">Enter mail</label>
+
+                <input type="text" placeholder="username" id="u_name">
+                <p  class="error" id="user_name"></p>
+                <label for=""> Enter Username:</label>     
+
+                <input type="password" placeholder="Enter Password" id="u_pass1">
+                <p class="error" id="password_1"></p>
+                <label for="">Password:</label>
+
+                <input type="password" placeholder="Confirm Password" id="u_pass2">
+                <p class="error"  id="password_2"></p>
+                <label for="">Confirm Password:</label>
+
+                
+                <button type="submit" class="btn_signup">Signup</button>    
+            </form>
+            <p class="jump_signup">Already have an account? <span><a href="/login.html">Login</a> </span></p>
+            <p class="footer">Softsellers.com &copy; All rights reserved</p>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoftSellers Login</title>
+    <link
+      rel="icon"
+      class="title_logo"
+      href="/logo/logo1.png"
+      type="x-icon/image"
+    />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <script src="/JS/login.js"></script>
+  </head>
+  <body>
+    <section class="logincontainer">
+      <img src="/logo.png" class="logo_img" alt="Not loaded" />
+
+      <div class="login_form">
+        <form action="/api/v1/users/login" method="POST" class="main_form">
+          <label for=""> Enter Username:</label>
+          <input type="text" placeholder="username" id="email" name="email" />
+          <p class="error" id="userError"></p>
+          <label for="">Password:</label>
+          <input
+            type="password"
+            placeholder="pass"
+            id="password"
+            name="password"
+          />
+          <p class="error" id="passError"></p>
+
+          <!-- <input type="radio" id="user" name="user" value="User" />
+          <label for="user">User</label>
+
+          <input type="radio" id="seller" name="seller" value="Seller" />
+          <label for="seller">Seller</label> -->
+          <!-- <label for="">Captcha:<p id="capt"></p></label>
+                <input type="captcha" placeholder="#######" id="u_captcha">
+                <p class="error" id="captError"></p> -->
+          <p class="jump_signup">
+            Don't have an account?
+            <span><a href="/api/v1/users/signupPage"> Signup</a> </span>
+          </p>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <p class="footer">Softsellers.com &copy; All rights reserved</p>
+    </section>
+  </body>
+</html>

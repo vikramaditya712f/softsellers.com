@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/verifyotp.js"></script>
+</head>
+<body>
+    <form method="POST">
+        <table border="2">
+            <tr>
+                <th>MobileNumber : </th>
+                <th><input id="m_num" type="text"></th>
+            </tr>
+            <tr><th colspan="2"><button onclick="getotp()" type="submit" id="g_otp">Generate OTP</button></th></tr>
+            <tr>
+                <th>Enter OTP :</th>
+                <td><input type="text" id="c_opt"></td>
+            </tr>
+            <tr >
+                <th colspan="2"><button onclick="verifyotp()" type="submit" id="c_otp">verify OTP</button></th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

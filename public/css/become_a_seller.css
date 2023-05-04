@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Itim', cursive;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,rgb(248, 117, 29),white, rgb(72, 158, 72));
+    background: blur(59px);
+}
+
+.backButton a{
+    /* display: block;
+    font-size: 1.2rem;
+    /* margin: 0px 10px; */
+    display: inline-block;
+    /* float: right; */
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: block;
+    /* text-align: center; */
+    border: 2px solid rgb(91, 89, 89);
+    margin: 10px;
+    border-radius: 7px; 
+
+}
+
+.info-main{
+    display: flex;
+    position: relative;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.personalInfo ,.bankDetails  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(91, 89, 89);
+    margin : 20px;
+    border-radius: 8px;
+    color: black;
+    width: 100%;
+    /* font-size: 1.3rem; */
+}
+
+.personalInfo .otherdetails , div input,label{
+    /* display: block;    */
+    float: left;
+    border-radius: 7px;
+    width: 300px;
+    margin: 8px;
+    padding: 4px;
+}
+.personalInfo .otherdetails , div input:focus{
+    background-color: rgb(221, 216, 225);
+    
+}
+
+
+.seller_register button{
+    margin-left: 15%;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius:7px;
+    border: none;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right , rgb(86, 66, 239) ,rgb(28, 192, 189));
+    color: aliceblue;
+}
+
+.seller_register button:hover{
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to right , rgb(28, 192, 189) ,rgb(86, 66, 239));
+
+}

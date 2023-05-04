@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap');
+
+:root{ 
+    --font-main:'DM Sans', sans-serif;
+    --font-secondary:'DM Serif Display', serif;
+    
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    font-family: var(--font-main);
+}
+
+.logincontainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    margin-top: 3%;
+    /* border: 1px solid black; */
+}
+
+
+
+.logincontainer .login_form{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center;
+     */
+     justify-content: center;
+    /* border: 1px solid black; */
+    width: 40%;
+    background-color: rgb(115, 122, 185);
+    border-radius: 3px;
+    /* box-shadow: 3px 15px 5px 0px; */
+}
+
+.logincontainer .login_form img{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 25%;
+    /* height: auto; */
+
+}
+.logincontainer .login_form .main_form{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px 10px 5px 10px;
+}
+
+.logincontainer .login_form .main_form label{
+    display: none;
+    padding-top: 15px;
+    /* padding-bottom:; */
+    /* display: block; */
+    align-self: center;
+}
+
+.logincontainer .login_form .main_form input{
+    font-size: large;
+    display: block;
+    flex-direction: column; 
+    align-self: center;
+    padding: 2%;
+    width: 70%;
+    margin-top:5px ;
+    border-radius: 8px;
+    outline: none;
+    border: none; 
+    font-family: var(--font-main);
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* align-items: center; */
+    margin: 5px 0px;
+    color: red;
+}
+
+.logincontainer .login_form  .jump_signup{
+    display: flex;
+    font-size: larger;
+    font-weight: 500;
+    justify-content: center;
+}
+.logincontainer .login_form  .jump_signup a{
+    color: blue;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
+.logincontainer .login_form .main_form .btn_signup{
+    margin-top: 20px;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    border: none;
+    background-color: rgb(200, 166, 233);
+    font-size: large;
+    /* font-weight: 400; */
+    /* cursor: pointer; */
+}
+.logincontainer .login_form .main_form .btn_signup:hover{
+    cursor: pointer;
+    /* border: ; */
+    color: black;
+    background-color: rgb(144, 101, 182);
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* padding: 0px; */
+    margin:30px 0px 0px 0px;
+}
